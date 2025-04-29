@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="seq_employee_work_report" model="ir.sequence">
+        <field name="name">Employee Work Report Sequence</field>
+        <field name="code">employee.work.report</field>
+        <field name="prefix">WRPT</field>
+        <field name="padding">5</field>
+    </record>
+</odoo>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Corrected Action -->
+    <record id="action_work_report" model="ir.actions.act_window">
+        <field name="name">Work Reports</field>
+        <field name="res_model">employee.work.report</field>
+        <field name="view_mode">list,form</field> <!-- ✅ Correct -->
+        <field name="view_id" ref="view_employee_work_report_list"/> <!-- ✅ Link your list view -->
+    </record>
+
+    <!-- Top Menu -->
+    <menuitem id="menu_work_report_root"
+              name="Work Reports"
+              sequence="90"/>
+
+    <!-- Submenu -->
+    <menuitem id="menu_work_report_main"
+              name="My Work Reports"
+              parent="menu_work_report_root"
+              action="action_work_report"
+              sequence="1"/>
+
+</odoo>
